@@ -10,20 +10,20 @@
 
 int main(void)
 {
-	int c, lastc;
+	int c, lc;
 
-	lastc = NONBLANK;
+	lc = NONBLANK;
 
 	while((c = getchar()) != EOF)
 	{
 		if(c == ' ')
 		{
-			if(lastc != ' ')
+			if(lc != ' ')
 				putchar(c);
 		}
 		else
 			putchar(c);
-		lastc=c;
+		lc=c;
 	}
 	return 0;
 }
